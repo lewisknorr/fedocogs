@@ -1,0 +1,7 @@
+{
+    "AUTHOR" : "Lewis Knorr",
+    "SHORT": "Tranquility Status",
+    "DESCRIPTION" : "A cog to ping the status of Tranquility, the EVE Online game server.",
+    "DISABLED" : false,
+    "NAME" : "evestatus"
+}
