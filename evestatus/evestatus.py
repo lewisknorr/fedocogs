@@ -2,24 +2,23 @@ import discord
 from discord.ext import commands
 import pyping
 
-class evestatus:
-    """Check the server status of Tranquility"""
+class FedoCogs:
+    """Check the server status of Tranqulity"""
 
     def __init__(self, bot):
         self.bot = bot
 
     @commands.command()
     async def tq(self):
-        """This does stuff!"""
+        """Is Tranquility online?"""
 
         #Your code will go here
         r = pyping.ping("https://esi.tech.ccp.is/latest/status/?datasource=tranquility")
 
         if r.ret_code == 0:
-            print("Tranquility is online")
+            await self.bot.say("Tranquility is online!")
         else:
-            print("Tranquility is offline")
-
+            await self.bot.say("Tranquility is offline")
 
 def setup(bot):
-    bot.add_cog(tq(bot))
+    bot.add_cog(FedoCogs(bot))
