@@ -13,7 +13,7 @@ class evestatus:
         """This does stuff!"""
 
         #Your code will go here
-        r = pyping.ping('https://esi.tech.ccp.is/latest/status/?datasource=tranquility')
+        r = pyping.ping("https://esi.tech.ccp.is/latest/status/?datasource=tranquility")
 
         if r.ret_code == 0:
             print("Tranquility is online")
