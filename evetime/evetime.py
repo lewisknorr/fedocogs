@@ -13,7 +13,7 @@ class EVETime:
         """A simple cog to output the current EVE time"""
 
         #Your code will go here
-        await self.bot.say(strftime("Current EVE Time: %m/%d/%Y - %H:%M:%S", gmtime()))
+        await self.bot.say(strftime("The current EVE time is **%d/%m/%Y - %H:%M:%S**", gmtime()))
 
 def setup(bot):
     bot.add_cog(EVETime(bot))
