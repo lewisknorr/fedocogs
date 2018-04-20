@@ -10,7 +10,8 @@ class EVETime:
 
     @commands.command()
     async def evetime(self):
-
+        """A simple cog to output the current time in EVE Online"""
+        
         #Your code will go here
         await self.bot.say(strftime("EVE time is currently **%H:%M:%S** on **%d/%m/%Y**", gmtime()))
 
