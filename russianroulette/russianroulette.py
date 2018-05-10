@@ -124,7 +124,7 @@ class Russianroulette:
                 self.player_add(settings, user, bet)
                 self.subtract_credits(settings, user, bet)
                 await self.bot.say("{} has started a game of roulette with a starting bet of "
-                                   "{}\nThe game will start in 30 seconds or when 5 more "
+                                   "{}\nThe game will start in **one minute** or when 5 more "
                                    "players join.".format(user.name, bet))
                 await asyncio.sleep(60)
                 if len(settings["Players"].keys()) == 1:
