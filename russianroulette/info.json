@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "Lewis Knorr",
+    "SHORT" : "Play a game of russian roulette with up to 6 players",
+    "DESCRIPTION" : "Russian roulette simulator. Only one will survive.",
+    "DISABLED" : false,
+    "NAME" : "Russianroulette",
+    "INSTALL_MSG" : "This is a fork of Russian Roulette from Jumper Cogs. Only edited to increase the wait time."
+}
